@@ -112,7 +112,7 @@ textarea:focus {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 892px) {
     .principal-container {
         flex-direction: column;
     }
@@ -134,14 +134,55 @@ textarea:focus {
         justify-content: space-around;
         margin-top: 0;
     }
+
     .container-message {
         width: 100%;
         height: 100%;
         margin-top: 1rem;
     }
-    .img-muñeco{
+
+    .img-muñeco {
         display: none;
-    }  
+    }
+}
 
+@media (max-width: 558px) {
+    .principal-container {
+        flex-direction: column;
+    }
 
+    .container-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 99%;
+        height: 40%;
+    }
+
+    .containerButtons a {
+        padding: 10px 30px;
+        margin: 0.2rem auto;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-message {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    .img-muñeco {
+        display: none;
+    }
 }
