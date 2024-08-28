@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="encrypt.js"></script>
+    <title>Encriptador</title>
 </head>
+
 <body>
-    
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <div class="principal-container">
+            <div class="container-text">
+                <textarea name="encriptador" id="encriptador" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="containers">
+                    <p><img src="img/!.png" alt="Exclamación">Solo letras en minúsculas y sin acentos.</p>
+                    <div class="containerButtons">
+                        <a class="Encrypt">Encriptar!</a>
+                        <a class="Decrypt">Desencriptar!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-message">
+                <img class="img-muñeco" src="img/Muñeco.png" alt="Muñeco">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
+                <a class="Copy">Copiar</a>
+            </div>
+        </div>
+    </main>
+    <footer><p class="footer">Proyecto creado por Camilo Andrés Benavides Salamanca. &copy; 2024</p></footer>
 </body>
+
 </html>
