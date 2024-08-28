@@ -1,69 +1,85 @@
-:root{
-    --colorFondo:#E9ECF8;
-    --darkBlue: #0A3871; 
+:root {
+    --colorFondo: #E9ECF8;
+    --darkBlue: #0A3871;
     --white: #fff;
 }
-body{
+
+body {
     background-color: var(--colorFondo);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-textarea{
-    width: 120%;    
+
+textarea {
+    width: 120%;
     height: 70%;
     resize: none;
     background: var(--colorFondo);
     border: none
 }
+
 textarea::placeholder {
-    font-size: 1.3rem; 
-    color: #888; 
-    font-style: italic; 
+    font-size: 1.3rem;
+    color: #888;
+    font-style: italic;
 }
-textarea:focus{
+
+textarea:focus {
     outline: none;
 }
-.principal-container{
+
+.principal-container {
     display: flex;
     height: 82vh;
     justify-content: space-around;
 }
-.logo{
+
+.logo {
     width: 8%;
-    height: 8%;;
+    height: 8%;
+    ;
     padding-top: 0.5rem;
 }
-.container-text{
+
+.container-text {
     height: 88%;
 }
-.containers img{
+
+.containers img {
     margin-right: 5px;
 }
-.containerButtons{
+
+.containerButtons {
     margin-top: 3rem;
 }
-.Copy,.containerButtons a{
+
+.Copy,
+.containerButtons a {
     border: 1px solid var(--darkBlue);
     border-radius: 10px;
     padding: 20px 90px;
     cursor: pointer;
 }
-.Copy:hover{
+
+.Copy:hover {
     background: var(--darkBlue);
     color: var(--white);
 }
-.container-text p{
+
+.container-text p {
     margin-bottom: 1rem;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
 }
-.Encrypt{
+
+.Encrypt {
     background: var(--darkBlue);
-    color: var(--white) ;
+    color: var(--white);
 }
-.container-message{
+
+.container-message {
     background: var(--white);
     border-radius: 15px;
     display: flex;
@@ -73,22 +89,59 @@ textarea:focus{
     width: 28%;
     align-items: center;
     /*Cuando se muestre el resultado se va a limitar */
-    max-width: 100%; 
-    word-wrap: break-word; 
-    word-break: break-all; 
-    overflow-wrap: break-word; 
-    overflow: auto; 
-    padding: 10px; 
-    box-sizing: border-box; 
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
-.container-message h3{
+
+.container-message h3 {
     color: var(--darkBlue);
 }
-.container-message img{
-   height: 43%;
+
+.container-message img {
+    height: 43%;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .principal-container {
+        flex-direction: column;
+    }
+
+    .container-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 99%;
+        height: 40%;
+    }
+
+    .containerButtons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    .container-message {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .img-muñeco{
+        display: none;
+    }  
+
+
 }
