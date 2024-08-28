@@ -1,0 +1,86 @@
+:root{
+    --colorFondo:#E9ECF8;
+    --darkBlue: #0A3871; 
+    --white: #fff;
+}
+body{
+    background-color: var(--colorFondo);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+textarea{
+    width: 120%;    
+    height: 70%;
+    resize: none;
+    background: var(--colorFondo);
+    border: none
+}
+textarea::placeholder {
+    font-size: 1.3rem; 
+    color: #888; 
+    font-style: italic; 
+}
+textarea:focus{
+    outline: none;
+}
+.principal-container{
+    display: flex;
+    height: 82vh;
+    justify-content: space-around;
+}
+.logo{
+    width: 8%;
+    height: 8%;;
+    padding-top: 0.5rem;
+}
+.container-text{
+    height: 88%;
+}
+.containers img{
+    margin-right: 5px;
+}
+.containerButtons{
+    margin-top: 3rem;
+}
+.Copy,.containerButtons a{
+    border: 1px solid var(--darkBlue);
+    border-radius: 10px;
+    padding: 20px 90px;
+    cursor: pointer;
+}
+.Copy:hover{
+    background: var(--darkBlue);
+    color: var(--white);
+}
+.container-text p{
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+.Encrypt{
+    background: var(--darkBlue);
+    color: var(--white) ;
+}
+.container-message{
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 88%;
+    width: 28%;
+    align-items: center;
+}
+.container-message h3{
+    color: var(--darkBlue);
+}
+.container-message img{
+   height: 43%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
